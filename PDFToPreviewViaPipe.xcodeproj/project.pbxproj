@@ -26,6 +26,7 @@
 		7311721B22694DB300D14534 /* TaskWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWrapper.h; sourceTree = "<group>"; };
 		7311721C22694DB300D14534 /* TaskWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskWrapper.m; sourceTree = "<group>"; };
 		7311721E22694E4E00D14534 /* TaskWrapperDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWrapperDelegate.h; sourceTree = "<group>"; };
+		7311721F22695BF300D14534 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		731171FE22694BCA00D14534 = {
 			isa = PBXGroup;
 			children = (
+				7311721F22695BF300D14534 /* README.md */,
 				7311720922694BCA00D14534 /* PDFToPreviewViaPipe */,
 				7311720822694BCA00D14534 /* Products */,
 			);
@@ -103,6 +105,11 @@
 				TargetAttributes = {
 					7311720622694BCA00D14534 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -276,7 +283,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PDFToPreviewViaPipe/PDFToPreviewViaPipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PDFToPreviewViaPipe/Info.plist;
@@ -293,7 +299,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PDFToPreviewViaPipe/PDFToPreviewViaPipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = PDFToPreviewViaPipe/Info.plist;
