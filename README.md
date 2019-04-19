@@ -22,7 +22,7 @@ A quick throw-away experiment to see if I could answer this question:
 
 Building on @ashur's suggestion, my idea was to pipe the PDF data to `open -f -a Preview` using `NSTask` and `NSPipe`.
 
-Good news -- it worked.  Bad news -- it creates a temporary file in `/private/tmp` (and so I turned off sandboxing to get it to work).  The objective was to avoid creating a temporary file if possible.
+Good news -- it worked.  Bad news -- it creates a temporary file in `/private/tmp` (and so I turned off sandboxing to get it to work).  The objective was to avoid creating a temporary file if possible.  I think it's `open` that creates the temp file.
 
 Uses `TaskWrapper` code that I copied and modified from my ancient [MoreArty](https://github.com/aglee/MoreArty) sample project.  BTW there's at least one glitch in the `TaskWrapper` stuff -- the task-did-end delegate method gets called twice.
 

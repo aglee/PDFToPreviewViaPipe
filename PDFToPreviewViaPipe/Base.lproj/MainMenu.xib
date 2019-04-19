@@ -689,20 +689,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-3Q-laf">
+                        <rect key="frame" x="283" y="13" width="183" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Send to PDF to Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nJu-pU-7wH">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="sendPDFToPreview:" target="Voe-Tx-rLC" id="nri-ad-Bje"/>
+                        </connections>
+                    </button>
                     <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8q-zl-h3a">
-                        <rect key="frame" x="80" y="187" width="240" height="135"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="frame" x="20" y="61" width="440" height="279"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="y58-RT-3lB">
-                            <rect key="frame" x="0.0" y="0.0" width="225" height="135"/>
+                            <rect key="frame" x="0.0" y="0.0" width="425" height="279"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView ambiguous="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="iq4-9J-ycx">
-                                    <rect key="frame" x="0.0" y="0.0" width="225" height="135"/>
+                                <textView ambiguous="YES" verticallyResizable="YES" usesFontPanel="YES" usesInspectorBar="YES" findStyle="bar" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" spellingCorrection="YES" smartInsertDelete="YES" id="iq4-9J-ycx">
+                                    <rect key="frame" x="0.0" y="0.0" width="425" height="279"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="225" height="135"/>
-                                    <size key="maxSize" width="225" height="10000000"/>
+                                    <size key="minSize" width="425" height="279"/>
+                                    <size key="maxSize" width="431" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment content="Some text.  Feel free to edit.">
                                             <attributes>
@@ -721,23 +732,13 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="rEA-ti-kMO">
-                            <rect key="frame" x="225" y="0.0" width="15" height="135"/>
+                            <rect key="frame" x="425" y="0.0" width="15" height="279"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFW-3Q-laf">
-                        <rect key="frame" x="149" y="78" width="183" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Send to PDF to Preview" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nJu-pU-7wH">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="sendPDFToPreview:" target="Voe-Tx-rLC" id="nri-ad-Bje"/>
-                        </connections>
-                    </button>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="86" y="-182"/>
         </window>
     </objects>
 </document>
