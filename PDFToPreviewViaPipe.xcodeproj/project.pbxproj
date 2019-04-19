@@ -11,6 +11,7 @@
 		7311720E22694BCD00D14534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7311720D22694BCD00D14534 /* Assets.xcassets */; };
 		7311721122694BCD00D14534 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7311720F22694BCD00D14534 /* MainMenu.xib */; };
 		7311721422694BCD00D14534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311721322694BCD00D14534 /* main.m */; };
+		7311721D22694DB300D14534 /* TaskWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7311721C22694DB300D14534 /* TaskWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		7311721222694BCD00D14534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7311721322694BCD00D14534 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7311721522694BCD00D14534 /* PDFToPreviewViaPipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFToPreviewViaPipe.entitlements; sourceTree = "<group>"; };
+		7311721B22694DB300D14534 /* TaskWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWrapper.h; sourceTree = "<group>"; };
+		7311721C22694DB300D14534 /* TaskWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskWrapper.m; sourceTree = "<group>"; };
+		7311721E22694E4E00D14534 /* TaskWrapperDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskWrapperDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 			children = (
 				7311720A22694BCA00D14534 /* AppDelegate.h */,
 				7311720B22694BCA00D14534 /* AppDelegate.m */,
+				7311721B22694DB300D14534 /* TaskWrapper.h */,
+				7311721C22694DB300D14534 /* TaskWrapper.m */,
+				7311721E22694E4E00D14534 /* TaskWrapperDelegate.h */,
 				7311720D22694BCD00D14534 /* Assets.xcassets */,
 				7311720F22694BCD00D14534 /* MainMenu.xib */,
 				7311721222694BCD00D14534 /* Info.plist */,
@@ -135,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7311721422694BCD00D14534 /* main.m in Sources */,
+				7311721D22694DB300D14534 /* TaskWrapper.m in Sources */,
 				7311720C22694BCA00D14534 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
