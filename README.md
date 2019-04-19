@@ -1,14 +1,16 @@
 #  PDFToPreviewViaPipe
 
+[**UPDATE:** My [second attempt](https://github.com/aglee/PDFToPreviewViaPrintOperation) is much simpler and works better.]
+
 A quick throw-away experiment to see if I could answer this question:
-
-<https://twitter.com/colincornaby/status/1119014724404834304>
-
-> Mario wants Preview to treat it as an unsaved document, so he doesn't have to worry about handling the save flow himself. I feel like I've seen other apps do this (like print to PDF does.)
 
 <https://twitter.com/MarioGuzman/status/1119014393956556800>
 
 > Does anyone know how to (or if possible) to open a PDF document in Preview without saving to disk first with AppKit? Almost like an export... I generate a PDF and just shoot it directly to Preview without having to mess with saving to disk and passing a file path to NSWorkspace.
+
+<https://twitter.com/colincornaby/status/1119014724404834304>
+
+> Mario wants Preview to treat it as an unsaved document, so he doesn't have to worry about handling the save flow himself. I feel like I've seen other apps do this (like print to PDF does.)
 
 <https://twitter.com/ashur/status/1119019224838492161>
 
